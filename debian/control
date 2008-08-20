@@ -1,0 +1,20 @@
+Source: python-git
+Section: python
+Priority: optional
+Maintainer: Daniel Watkins <daniel@daniel-watkins.co.uk>
+Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7), dpatch, python, python-setuptools (>= 0.6a9)
+Build-Depends-Indep: python-support
+Standards-Version: 3.8.0
+Homepage: http://gitorious.org/projects/git-python/
+XS-Python-Version: all
+Vcs-Bzr: http://bzr.daniel-watkins.co.uk/debian/python-git/
+
+Package: python-git
+Architecture: all
+Depends: ${python:Depends}, git-core (>= 1.5.3.7)
+Description: Python library to interact with Git repositories
+ python-git provides object model access to a Git repository, so Python can be
+ used to manipulate it. Repository objects can be opened or created, which can
+ then be traversed to find parent commit(s), trees, blobs, etc.
+XB-Python-Version: ${python:Versions}

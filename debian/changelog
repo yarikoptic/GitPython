@@ -1,0 +1,21 @@
+python-git (0.1.4.1-3) unstable; urgency=low
+
+  * Added Debian Python Modules Team to Uploaders field.
+
+ -- Daniel Watkins <daniel@daniel-watkins.co.uk>  Wed, 20 Aug 2008 16:38:31 +0100
+
+python-git (0.1.4.1-2) unstable; urgency=low
+
+  * Fixed the synopsis to work as an appositive clause in a sentence, as per
+    Section 6.2.2 of the Developer Reference.
+  * Added patch so that git.Repo.create and git.Repo.init_bare now create a
+    bare repository, as intended. (Closes: #494581)
+  * Added Vcs-Bzr control field.
+
+ -- Daniel Watkins <daniel@daniel-watkins.co.uk>  Mon, 18 Aug 2008 19:50:22 +0100
+
+python-git (0.1.4.1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #492520)
+
+ -- Daniel Watkins <daniel@daniel-watkins.co.uk>  Sat, 26 Jul 2008 20:48:13 +0100

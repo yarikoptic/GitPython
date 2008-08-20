@@ -1,0 +1,15 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 01_remove_ez_setup.dpatch by Daniel Watkins <daniel@daniel-watkins.co.uk>
+##
+## DP: Remove needless dependency on ez_setup.
+
+@DPATCH@
+
+--- python-git-0.1.4.1.orig/setup.py
++++ python-git-0.1.4.1/setup.py
+@@ -1,5 +1,3 @@
+-from ez_setup import use_setuptools
+-use_setuptools()
+ from setuptools import setup, find_packages
+ from distutils.command.build_py import build_py as _build_py
+ from setuptools.command.sdist import sdist as _sdist

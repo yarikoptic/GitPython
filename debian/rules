@@ -1,0 +1,47 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+include /usr/share/dpatch/dpatch.make
+
+build: patch
+
+pre-clean: patch
+	dh_testdir
+	dh_testroot
+	python setup.py clean
+
+clean: pre-clean unpatch
+	rm -f build-stamp
+	rm -f lib/git/*.pyc
+	rm -rf dist/ build/
+	rm -f lib/GitPython.egg-info/SOURCES.txt
+	dh_clean
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_prep
+	dh_installdirs
+	python setup.py install --no-compile --root=debian/python-git \
+		--single-version-externally-managed
+
+# Build architecture-independent files here.
+binary-indep: build install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs
+	dh_installdocs
+	dh_compress -X.txt -X.py
+	dh_fixperms
+	dh_pysupport
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+# Build architecture-dependent files here.
+binary-arch: build install
+# We have nothing to do by default.
+
+binary: binary-indep binary-arch
+.PHONY: build pre-clean clean binary-indep binary-arch binary install

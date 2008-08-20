@@ -1,0 +1,31 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 02_bare_repos.dpatch by Daniel Watkins <daniel@daniel-watkins.co.uk>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: Make git.Repo.create and git.Repo.init_bare actually create bare repos 
+## DP: (as intended).
+
+@DPATCH@
+
+--- python-git-0.1.4.1.orig/lib/git/repo.py
++++ python-git-0.1.4.1/lib/git/repo.py
+@@ -44,7 +44,8 @@
+         while curpath:
+             if is_git_dir(curpath):
+                 self.bare = True
+-                self.path, self.wd = curpath
++                self.path = curpath
++                self.wd = curpath
+                 break
+             gitpath = os.path.join(curpath, '.git')
+             if is_git_dir(gitpath):
+@@ -296,7 +297,7 @@
+             os.makedirs(path, 0755)
+ 
+         git = Git(path)
+-        output = git.init(**kwargs)
++        output = git.init('--bare', **kwargs)
+         return Repo(path)
+     create = init_bare
+ 
+
