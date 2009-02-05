@@ -1,9 +1,10 @@
-python-git (0.1.4.1-3) UNRELEASED; urgency=low
+python-git (0.1.5-1) UNRELEASED; urgency=low
 
+  * New upstream release. (Closes: #501211)
   * Added Debian Python Modules Team to Uploaders field.
   * Updated Vcs-* fields to reflect the use of the DPMT Subversion repository.
 
- -- Daniel Watkins <daniel@daniel-watkins.co.uk>  Wed, 20 Aug 2008 17:51:16 +0100
+ -- Daniel Watkins <daniel@daniel-watkins.co.uk>  Wed, 07 Jan 2009 13:50:12 +0000
 
 python-git (0.1.4.1-2) unstable; urgency=low
 
