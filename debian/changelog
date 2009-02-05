@@ -4,8 +4,9 @@ python-git (0.1.5-1) UNRELEASED; urgency=low
   * Added Debian Python Modules Team to Uploaders field.
   * Updated Vcs-* fields to reflect the use of the DPMT Subversion repository.
   * Removed all patches merged upstream.
+  * Converted debian/rules to use debhelper 7.
 
- -- Daniel Watkins <daniel@daniel-watkins.co.uk>  Wed, 07 Jan 2009 13:55:22 +0000
+ -- Daniel Watkins <daniel@daniel-watkins.co.uk>  Wed, 07 Jan 2009 14:04:00 +0000
 
 python-git (0.1.4.1-2) unstable; urgency=low
 
