@@ -1,16 +1,12 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
-include /usr/share/dpatch/dpatch.make
+build:
 
-build: patch
-
-pre-clean: patch
+clean:
 	dh_testdir
 	dh_testroot
 	python setup.py clean
-
-clean: pre-clean unpatch
 	rm -f build-stamp
 	rm -f lib/git/*.pyc
 	rm -rf dist/ build/
@@ -44,4 +40,4 @@ binary-arch: build install
 # We have nothing to do by default.
 
 binary: binary-indep binary-arch
-.PHONY: build pre-clean clean binary-indep binary-arch binary install
+.PHONY: build clean binary-indep binary-arch binary install
