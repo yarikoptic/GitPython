@@ -3,7 +3,7 @@ Section: python
 Priority: optional
 Maintainer: Daniel Watkins <daniel@daniel-watkins.co.uk>
 Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
-Build-Depends: debhelper (>= 7), dpatch, python, python-setuptools (>= 0.6a9)
+Build-Depends: debhelper (>= 7), python, python-setuptools (>= 0.6a9)
 Build-Depends-Indep: python-support
 Standards-Version: 3.8.0
 Homepage: http://gitorious.org/projects/git-python/
