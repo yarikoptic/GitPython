@@ -13,7 +13,7 @@ Vcs-Browser: http://svn.debian.org/viewsvn/python-modules/packages/python-git/tr
 
 Package: python-git
 Architecture: all
-Depends: ${python:Depends}, git-core (>= 1.5.3.7)
+Depends: ${python:Depends}, git-core (>= 1.5.3.7), ${misc:Depends}
 Description: Python library to interact with Git repositories
  python-git provides object model access to a Git repository, so Python can be
  used to manipulate it. Repository objects can be opened or created, which can
