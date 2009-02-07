@@ -1,8 +1,9 @@
 python-git (0.1.6-1) unstable; urgency=low
 
   * New upstream release. (Closes: #512584)
+  * Changed licensing of packaging to match upstream's license.
 
- -- Daniel Watkins <daniel@daniel-watkins.co.uk>  Thu, 05 Feb 2009 17:14:47 +0000
+ -- Daniel Watkins <daniel@daniel-watkins.co.uk>  Sat, 07 Feb 2009 12:10:15 +0100
 
 python-git (0.1.5-1) unstable; urgency=low
 
