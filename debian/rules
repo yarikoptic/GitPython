@@ -1,9 +1,23 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
+override_dh_installdocs:
+	dh_installdocs -Xjquery.js -X_sources
+
 %:
 	dh $@
 
 clean:
 	rm -f lib/GitPython.egg-info/SOURCES.txt
 	dh clean
+
+DOC_VERSION=$(shell dpkg-parsechangelog | sed -rne 's,^Version: ([^-]+).*,\1,p')
+UPSTREAM=$(shell dpkg-parsechangelog | sed -nr 's/Version: (.*)-[^-]*/\1/p')
+get-orig-source:
+	uscan --download-current-version
+	wget -P get-orig-source http://packages.python.org/GitPython/$(DOC_VERSION)/docs_$(DOC_VERSION).zip
+	mkdir get-orig-source/doc
+	unzip -d get-orig-source/doc get-orig-source/docs_$(DOC_VERSION).zip
+	tar -C get-orig-source -czvf python-git_$(UPSTREAM).orig-doc.tar.gz doc/
+	rm -rf get-orig-source
+

@@ -1,3 +1,16 @@
+python-git (0.3.1-beta2-1) unstable; urgency=low
+
+  * Team upload.
+  * Update git dependency. (Closes: #600237, #568583)
+  * New upstream release. (Closes: #579553)
+  * Add upstream documentation. (Closes: #523881)
+  * Change source format to 3.0 (quilt)
+  * Bump Standards-Version to 3.9.1
+    - Remove deprecated /usr/share/common-licenses/BSD link from copyright
+  * Change to DEP5 copyright
+
+ -- Andreas Noteng <andreas@noteng.no>  Sat, 02 Apr 2011 15:32:59 +0200
+
 python-git (0.1.6-1) unstable; urgency=low
 
   * New upstream release. (Closes: #512584)

@@ -1,0 +1,9 @@
+Document: python-git
+Title: GitPython (python-git) documentation
+Abstract: This manual contains information on how to use the GitPython 
+ Python module
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python-git/index.html
+Files: /usr/share/doc/python-git/*.html
