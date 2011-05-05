@@ -11,7 +11,7 @@ clean:
 	rm -f lib/GitPython.egg-info/SOURCES.txt
 	dh clean
 
-DOC_VERSION=$(shell dpkg-parsechangelog | sed -rne 's,^Version: ([^-]+).*,\1,p')
+DOC_VERSION=$(shell dpkg-parsechangelog | sed -rne 's,^Version: ([^-]+).*,\1,p' | sed 's/~.*//')
 UPSTREAM=$(shell dpkg-parsechangelog | sed -nr 's/Version: (.*)-[^-]*/\1/p')
 get-orig-source:
 	uscan --download-current-version

@@ -1,3 +1,4 @@
 version=3
+opts=dversionmangle=s/~/-/ \
 http://pypi.python.org/packages/source/G/GitPython/GitPython-(.*)\.tar\.gz \
     debian uupdate

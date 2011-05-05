@@ -2,10 +2,11 @@ Source: python-git
 Section: python
 Priority: optional
 Maintainer: Daniel Watkins <daniel@daniel-watkins.co.uk>
-Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>,
+           Vincent Bernat <bernat@debian.org> 
 Build-Depends: debhelper (>= 7.0.50~), python, python-setuptools (>= 0.6a9),
  python-sphinx
-Standards-Version: 3.9.1
+Standards-Version: 3.9.2
 Homepage: http://gitorious.org/projects/git-python/
 XS-Python-Version: all
 Vcs-Svn: svn://svn.debian.org/python-modules/packages/python-git/trunk
