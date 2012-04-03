@@ -5,7 +5,7 @@ override_dh_installdocs:
 	dh_installdocs -Xjquery.js -X_sources
 
 %:
-	dh $@
+	dh $@ --with python2
 
 clean:
 	rm -f lib/GitPython.egg-info/SOURCES.txt

@@ -3,10 +3,11 @@ Section: python
 Priority: optional
 Maintainer: Daniel Watkins <daniel@daniel-watkins.co.uk>
 Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>,
-           Vincent Bernat <bernat@debian.org> 
+           Vincent Bernat <bernat@debian.org>,
+	TANIGUCHI Takaki <takaki@debian.org>
 Build-Depends: debhelper (>= 7.0.50~), python, python-setuptools (>= 0.6a9),
  python-sphinx
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://gitorious.org/projects/git-python/
 XS-Python-Version: all
 Vcs-Svn: svn://svn.debian.org/python-modules/packages/python-git/trunk
@@ -17,7 +18,8 @@ Architecture: all
 Depends: ${python:Depends},
  git (>= 1:1.7) | git-core (>= 1:1.5.3.7),
  ${misc:Depends},
- libjs-jquery
+ libjs-jquery,
+ python-gitdb (>= 0.5.1)
 Description: Python library to interact with Git repositories
  python-git provides object model access to a Git repository, so Python can be
  used to manipulate it. Repository objects can be opened or created, which can

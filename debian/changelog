@@ -1,3 +1,14 @@
+python-git (0.3.2~RC1-1) UNRELEASED; urgency=low
+
+  * Team upload.
+  * New upstream release
+  * Add myself to Uploaders.
+  * Bump Standards-Version to 3.9.3.
+    + debian/copyright: copyright-format 1.0
+  * Add python-gitdb to Depends:.
+
+ -- TANIGUCHI Takaki <takaki@debian.org>  Tue, 03 Apr 2012 13:28:34 +0900
+
 python-git (0.3.1~beta2-1) unstable; urgency=low
 
   [ Andreas Noteng ]
