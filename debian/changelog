@@ -1,3 +1,9 @@
+python-git (0.3.2~RC1-2) UNRELEASED; urgency=low
+
+  * Use canonical URIs for Vcs-* fields.
+
+ -- Jakub Wilk <jwilk@debian.org>  Sun, 05 May 2013 16:02:41 +0200
+
 python-git (0.3.2~RC1-1) unstable; urgency=low
 
   * Team upload.
