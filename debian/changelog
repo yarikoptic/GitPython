@@ -1,6 +1,11 @@
 python-git (0.3.2~RC1-2) UNRELEASED; urgency=low
 
+  [ Jakub Wilk ]
   * Use canonical URIs for Vcs-* fields.
+
+  [ TANIGUCHI Takaki ]
+  * debian/control: Change Maintainer to Python Module Team. (Closes: #705279)
+    + Remove "Daniel Watkins <daniel@daniel-watkins.co.uk>" from Maintainer. 
 
  -- Jakub Wilk <jwilk@debian.org>  Sun, 05 May 2013 16:02:41 +0200
 

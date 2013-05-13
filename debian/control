@@ -1,9 +1,8 @@
 Source: python-git
 Section: python
 Priority: optional
-Maintainer: Daniel Watkins <daniel@daniel-watkins.co.uk>
-Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>,
-           Vincent Bernat <bernat@debian.org>,
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Vincent Bernat <bernat@debian.org>,
 	TANIGUCHI Takaki <takaki@debian.org>
 Build-Depends: debhelper (>= 7.0.50~), python, python-setuptools (>= 0.6a9),
  python-sphinx
