@@ -1,3 +1,9 @@
+python-git (0.3.2~RC1-3) UNRELEASED; urgency=low
+
+  * Update Homepage to a working URL.
+
+ -- Vincent Bernat <bernat@debian.org>  Sat, 02 Nov 2013 01:27:18 +0100
+
 python-git (0.3.2~RC1-2) unstable; urgency=low
 
   [ Jakub Wilk ]
