@@ -1,6 +1,7 @@
 python-git (0.3.2~RC1-3) UNRELEASED; urgency=low
 
   * Update Homepage to a working URL.
+  * Bump Standards-Version to 3.9.5.
 
  -- Vincent Bernat <bernat@debian.org>  Sat, 02 Nov 2013 01:27:18 +0100
 

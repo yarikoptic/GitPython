@@ -6,7 +6,7 @@ Uploaders: Vincent Bernat <bernat@debian.org>,
 	TANIGUCHI Takaki <takaki@debian.org>
 Build-Depends: debhelper (>= 7.0.50~), python, python-setuptools (>= 0.6a9),
  python-sphinx
-Standards-Version: 3.9.3
+Standards-Version: 3.9.5
 Homepage: https://gitorious.org/git-python
 XS-Python-Version: all
 Vcs-Svn: svn://anonscm.debian.org/python-modules/packages/python-git/trunk/
