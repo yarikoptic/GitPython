@@ -3,6 +3,7 @@ python-git (0.3.2.1-1) experimental; urgency=medium
   * Team upload
   * New upstream bugfix release (Closes: #769595)
     - detects untracked files correctly now (Closes: #739898)
+    - includes debian/patches/dont-choke-on-rc-version.patch
 
  -- Yaroslav Halchenko <debian@onerussian.com>  Wed, 17 Dec 2014 19:44:09 -0500
 
