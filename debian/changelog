@@ -1,7 +1,8 @@
-python-git (0.3.2.1-1) experimental; urgency=medium
+python-git (0.3.2.1+git24-g891b124-1) experimental; urgency=medium
 
   * Team upload
-  * New upstream bugfix release (Closes: #769595)
+  * New upstream bugfix release (Closes: #769595) + post-release
+    changes which already contain additional fixes
     - detects untracked files correctly now (Closes: #739898)
     - includes debian/patches/dont-choke-on-rc-version.patch
   * debian/control
