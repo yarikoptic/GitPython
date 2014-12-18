@@ -5,8 +5,8 @@ Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.
 Uploaders: Vincent Bernat <bernat@debian.org>,
 	TANIGUCHI Takaki <takaki@debian.org>
 Build-Depends: debhelper (>= 7.0.50~), python, python-setuptools (>= 0.6a9),
- python-sphinx
-Standards-Version: 3.9.5
+ python-sphinx, python-smmap (>= 0.8.3)
+Standards-Version: 3.9.6
 Homepage: https://github.com/gitpython-developers/GitPython
 XS-Python-Version: all
 Vcs-Svn: svn://anonscm.debian.org/python-modules/packages/python-git/trunk/
@@ -19,6 +19,8 @@ Depends: ${python:Depends},
  ${misc:Depends},
  libjs-jquery,
  python-gitdb (>= 0.5.1)
+Suggests:
+ python-smmap
 Description: Python library to interact with Git repositories
  python-git provides object model access to a Git repository, so Python can be
  used to manipulate it. Repository objects can be opened or created, which can

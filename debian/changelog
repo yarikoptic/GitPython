@@ -4,8 +4,12 @@ python-git (0.3.2.1-1) experimental; urgency=medium
   * New upstream bugfix release (Closes: #769595)
     - detects untracked files correctly now (Closes: #739898)
     - includes debian/patches/dont-choke-on-rc-version.patch
+  * debian/control
+    - bump Standards-Version to 3.9.6
+    - added python-smmap (>= 0.8.3) to Build-Depends and Suggests:
+      used for testing
 
- -- Yaroslav Halchenko <debian@onerussian.com>  Wed, 17 Dec 2014 19:44:09 -0500
+ -- Yaroslav Halchenko <debian@onerussian.com>  Wed, 17 Dec 2014 22:23:07 -0500
 
 python-git (0.3.2~RC1-3) unstable; urgency=low
 
