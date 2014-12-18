@@ -1,6 +1,5 @@
-python-git (0.3.2.1+git24-g891b124-1) experimental; urgency=medium
+python-git (0.3.2.1+git24-g891b124-1) UNRELEASED; urgency=medium
 
-  * Team upload
   * New upstream bugfix release (Closes: #769595) + post-release
     changes which already contain additional fixes
     - detects untracked files correctly now (Closes: #739898)
@@ -9,8 +8,10 @@ python-git (0.3.2.1+git24-g891b124-1) experimental; urgency=medium
     - bump Standards-Version to 3.9.6
     - added python-smmap (>= 0.8.3) to Build-Depends and Suggests:
       used for testing
+  * debian/rules
+    - enable build-time testing
 
- -- Yaroslav Halchenko <debian@onerussian.com>  Wed, 17 Dec 2014 22:23:07 -0500
+ -- Yaroslav Halchenko <debian@onerussian.com>  Thu, 18 Dec 2014 11:25:40 -0500
 
 python-git (0.3.2~RC1-3) unstable; urgency=low
 
