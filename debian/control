@@ -6,7 +6,7 @@ Uploaders: Vincent Bernat <bernat@debian.org>,
 	TANIGUCHI Takaki <takaki@debian.org>
 Build-Depends: debhelper (>= 7.0.50~), python, python-setuptools (>= 0.6a9),
  python-sphinx,
- python-nose, python-smmap (>= 0.8.3~), python-gitdb (>= 0.6.2~), python-mock,
+ python-nose, python-smmap (>= 0.8.3~), python-gitdb (>= 0.6.4), python-mock,
 Standards-Version: 3.9.6
 Homepage: https://github.com/gitpython-developers/GitPython
 XS-Python-Version: all
@@ -19,7 +19,7 @@ Depends: ${python:Depends},
  git (>= 1:1.7) | git-core (>= 1:1.5.3.7),
  ${misc:Depends},
  libjs-jquery,
- python-gitdb (>= 0.6.2)
+ python-gitdb (>= 0.6.4)
 Suggests:
  python-smmap
 Description: Python library to interact with Git repositories
