@@ -8,11 +8,21 @@ override_dh_installdocs:
 	dh $@ --with python2
 
 override_dh_auto_test:
-	nosetests -s -v --exclude='test_(submodule.*|root_module|fetch_info)' git/test || echo "TESTS FAILED but keep going..."
+	: # run tests only if we can fetch original sources repository
+	-mkdir -p build/test; cd build/test; \
+     git clone git://github.com/gitpython-developers/GitPython; cd GitPython; git submodule update --init --recursive; \
+     for i in `seq 4`; do git reset --hard HEAD~1; done; git reset --hard origin/master; \
+     git config user.name "TESTING"; \
+     git config user.email "TESTING@example.com"; \
+	 touch build/test/go
+	[ ! -e build/test/go ] && \
+     GIT_PYTHON_TEST_GIT_REPO_BASE=$(CURDIR)/build/test/GitPython \
+	 nosetests -s -v git/test
 
 clean:
 	rm -f lib/GitPython.egg-info/SOURCES.txt
 	dh clean
+	rm -rf build
 
 DOC_VERSION=$(shell dpkg-parsechangelog | sed -rne 's,^Version: ([^-]+).*,\1,p' | sed 's/~.*//')
 UPSTREAM=$(shell dpkg-parsechangelog | sed -nr 's/Version: (.*)-[^-]*/\1/p')

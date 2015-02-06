@@ -7,6 +7,7 @@ Uploaders: Vincent Bernat <bernat@debian.org>,
 Build-Depends: debhelper (>= 7.0.50~), python, python-setuptools (>= 0.6a9),
  python-sphinx,
  python-nose, python-smmap (>= 0.8.3~), python-gitdb (>= 0.6.4), python-mock,
+ git,
 Standards-Version: 3.9.6
 Homepage: https://github.com/gitpython-developers/GitPython
 XS-Python-Version: all

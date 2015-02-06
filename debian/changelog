@@ -9,7 +9,8 @@ python-git (0.3.6+git5-gd8bbfea-1) experimental; urgency=medium
       used for testing
     - needs gitdb >= 0.6.4 -- adjusted version in *Depends
   * debian/rules
-    - enable build-time testing but ignore failures for now
+    - enable build-time testing if available on network and capable of
+      cloning original GitPython repository
 
  -- Yaroslav Halchenko <debian@onerussian.com>  Thu, 05 Feb 2015 18:44:46 -0500
 
