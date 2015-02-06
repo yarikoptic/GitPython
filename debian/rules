@@ -14,8 +14,8 @@ override_dh_auto_test:
      for i in `seq 4`; do git reset --hard HEAD~1; done; git reset --hard origin/master; \
      git config user.name "TESTING"; \
      git config user.email "TESTING@example.com"; \
-	 touch build/test/go
-	[ ! -e build/test/go ] && \
+	 touch ../go
+	[ ! -e build/test/go ] || \
      GIT_PYTHON_TEST_GIT_REPO_BASE=$(CURDIR)/build/test/GitPython \
 	 nosetests -s -v git/test
 
