@@ -1,6 +1,8 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
+export HOME=$(CURDIR)/build/test
+
 override_dh_installdocs:
 	dh_installdocs -Xjquery.js -X_sources
 
@@ -10,11 +12,10 @@ override_dh_installdocs:
 override_dh_auto_test:
 	: # run tests only if we can fetch original sources repository
 	-mkdir -p build/test; cd build/test; \
-     git clone git://github.com/gitpython-developers/GitPython; cd GitPython; git submodule update --init --recursive; \
-     for i in `seq 4`; do git reset --hard HEAD~1; done; git reset --hard origin/master; \
-     git config user.name "TESTING"; \
-     git config user.email "TESTING@example.com"; \
-	 touch ../go
+         git config --global http.sslVerify false; git config --global user.name "TESTING"; git config --global user.email "TESTING@example.com"; \
+         git clone git://github.com/gitpython-developers/GitPython; \
+         cd GitPython; git submodule update --init --recursive; \
+          for i in `seq 4`; do git reset --hard HEAD~1; done; git reset --hard origin/master; touch ../go
 	[ ! -e build/test/go ] || \
      GIT_PYTHON_TEST_GIT_REPO_BASE=$(CURDIR)/build/test/GitPython \
 	 nosetests -s -v git/test
